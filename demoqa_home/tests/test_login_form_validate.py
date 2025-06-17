@@ -13,3 +13,11 @@ def test_placeholder_validation(browser):
 
     practice_form_page.submit_form()
     assert 'was-validated' in practice_form_page.get_form_class()
+    
+from pages.practice_form_page import PracticeFormPage
+
+def test_state_and_city(browser):
+    practice_form_page = PracticeFormPage(browser)
+    practice_form_page.visit()
+
+    practice_form_page.fill_state_and_city()
