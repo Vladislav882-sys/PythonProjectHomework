@@ -6,8 +6,8 @@ def test_text_box(browser):
     text_box_page = TextBoxPage(browser)
     text_box_page.visit()
 
-    full_name = "John Doe"
-    current_address = "123 Main St"
+    full_name = "Vlad Lord"
+    current_address = "123 Lenina St"
     text_box_page.fill_full_name(full_name)
     text_box_page.fill_current_address(current_address)
 
